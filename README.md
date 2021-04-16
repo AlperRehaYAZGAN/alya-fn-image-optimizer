@@ -1,10 +1,11 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
-<br />
 <p align="center">
   <h3 align="center">Alya-Functions Image Optimizer Serverless Function</h3>
+  <br>
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Issues][issues-shield]][issues-url]
+  [![MIT License][license-shield]][license-url]
+
 
   <p align="center">
     Simple serverless function for fetch then optimize image operation. Cloud native image optimizing api tool built with OpenFaas utilities!
@@ -84,29 +85,43 @@ Serverless functions make development and testing easier. Almost every project, 
 
 ## Usage
 
-This cloud function has a one endpoint to handle whole process. If we assert server is listening on 300 port the following query save optimized image as alya-fn-image.jpg/png/webp
+This cloud function has a one endpoint to handle whole process. If we assert server is listening on 3000 port the following query save optimized image as alya-fn-image.webp
 
-- Webp convertion and %80 quality optimization
+- Webp convertion and %80 quality optimization  
+
 ```sh
-   curl -o alya-fn-image.webp "http://localhost:3000/?format=webp&quality=80&height=300&width=300&url=https://picsum.photos/720/720"
-   ```  
-
+   curl -X GET -G \  
+   "http://localhost:3000" \ 
+   -d format=webp \ 
+   -d quality=80 \ 
+   -d height=300 \ 
+   -d width=300 \ 
+   -d url=https://picsum.photos/720/720 \ 
+   -o alya-fn-image.webp
+   ```
 
 - Jpeg convertion and %80 quality optimization
 ```sh
-   curl -o alya-fn-image.jpg "http://localhost:3000/?format=jpeg&quality=80&height=300&width=300&url=https://picsum.photos/720/720"
-   ```  
+   curl -X GET -G \  
+   "http://localhost:3000" \ 
+   -d format=jpeg \ 
+   -d quality=80 \ 
+   -d height=300 \ 
+   -d width=300 \ 
+   -d url=https://picsum.photos/720/720 \ 
+   -o alya-fn-image.jpg
+   ```
 
 
 
-## Roadmap - TODO
+## Roadmap
 
 See the [open issues](https://github.com/AlperRehaYAZGAN/alya-fn-image-optimizer/issues) for a list of proposed features (and known issues).
 
-TODO:  
-[X] - JPEG,PNG,WEBP Image convertion and optimization  
-[ ] - After optimization webhook for statistical implementation  
-[ ] - NATS-queue implementation
+## TODO  
+- [X] JPEG,PNG,WEBP Image convertion and optimization  
+- [-] After optimization webhook for statistical implementation  
+- [-] NATS-queue implementation
 
 ## Contributing
 
