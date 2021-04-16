@@ -1,10 +1,11 @@
-
-<p align="center">
-  <h3 align="center">Alya-Functions Image Optimizer Serverless Function</h3>
-  <br>
-  [![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][contributors-url]
   [![Issues][issues-shield]][issues-url]
   [![MIT License][license-shield]][license-url]
+  
+<p align="center">
+  <h3 align="center">Alya-Functions Image Optimizer Serverless Function</h3>
+  <br/>
+  
 
 
   <p align="center">
