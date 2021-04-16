@@ -1,7 +1,7 @@
 [![Contributors][contributors-shield]][contributors-url]
   [![Issues][issues-shield]][issues-url]
   [![MIT License][license-shield]][license-url]
-  
+
 <p align="center">
   <h3 align="center">Alya-Functions Image Optimizer Serverless Function</h3>
   <br/>
@@ -35,7 +35,8 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap---todo">Roadmap - TODO</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#todo">TODO</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
